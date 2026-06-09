@@ -104,37 +104,38 @@ font-weight:bold;
 /* CONTAINER */
 
 .container{
-width:min(1100px,95vw);
+    width:100%;
+    max-width:1100px;
+    margin:auto;
+    padding:30px 15px;
+}
 
-
-margin:auto;
-
-padding:30px 15px;
-
-
+.container,
+.package,
+.window{
+    max-width:100%;
 }
 
 /* CAIXA */
 
 .package{
 
+    background:linear-gradient(
+        180deg,
+        #ffb7db,
+        #ff6cb7
+    );
 
-background:linear-gradient(
-    180deg,
-    #ffb7db,
-    #ff6cb7
-);
+    border-radius:30px;
 
-border-radius:30px;
+    padding:25px;
 
-padding:25px;
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.2);
 
-box-shadow:
-0 15px 40px rgba(0,0,0,.2);
+    position:relative;
 
-position:relative;
-
-
+    overflow:hidden;
 }
 
 .logo{
@@ -205,6 +206,7 @@ overflow:hidden;
 
 .shine{
 
+    display:none;
 
 position:absolute;
 
