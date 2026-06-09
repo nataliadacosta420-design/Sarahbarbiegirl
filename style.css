@@ -4,7 +4,11 @@ padding:0;
 box-sizing:border-box;
 font-family:'Segoe UI', sans-serif;
 }
-
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
 body{
 background:linear-gradient(
 135deg,
@@ -23,11 +27,12 @@ color:white;
 /* INTRO */
 
 .intro{
-position:fixed;
-inset:0;
-z-index:9999;
-}
+    position:fixed;
+    inset:0;
+    z-index:9999;
 
+    overflow:hidden;
+}
 .door{
 position:absolute;
 top:0;
@@ -193,6 +198,7 @@ border-radius:20px;
 padding:15px;
 
 position:relative;
+overflow:hidden;
 
 
 }
@@ -232,16 +238,16 @@ animation:shine 5s infinite;
 
 .doll{
 
+    flex:3;
 
-flex:3;
+    position:relative;
 
-position:relative;
+    min-height:clamp(350px, 60vw, 550px);
 
-min-height:min-height:clamp(350px, 60vw, 550px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-display:flex;
-justify-content:center;
-align-items:center;
 
 
 }
