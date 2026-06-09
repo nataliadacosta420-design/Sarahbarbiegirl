@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Barbie Girl</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TELA DE ABERTURA -->
+
+    <div class="intro" id="intro">
+
+        <div class="door left"></div>
+        <div class="door right"></div>
+
+        <div class="center-content">
+
+            <h1>🎀 BARBIE EDITION 🎀</h1>
+
+            <p>
+                Uma edição extremamente rara foi localizada.
+            </p>
+
+            <button onclick="abrirCaixa()">
+                Abrir Embalagem
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- CONTAINER PRINCIPAL -->
+
+    <div class="container">
+
+        <!-- CAIXA -->
+
+        <div class="package">
+
+            <div class="logo">
+                Barbie™
+            </div>
+
+            <div class="sublogo">
+                Collector Edition 2026
+            </div>
+
+            <div class="sticker">
+                LIMITED
+            </div>
+
+            <h1 class="name">
+                SARAH BARBIE GIRL
+            </h1>
+
+            <div class="window">
+
+                <div class="shine"></div>
+
+                <div class="doll">
+
+                    <div class="crown">👑</div>
+
+                    <div class="sparkle s1">✨</div>
+                    <div class="sparkle s2">💖</div>
+                    <div class="sparkle s3">✨</div>
+
+                    <img
+                        src="foto.png"
+                        alt="Sarah Barbie Girl"
+                        onclick="desbloquearConquista()"
+                    >
+
+                </div>
+
+                <div class="accessories">
+
+                    <div class="item">
+                        🎧
+                        <span>Playlist</span>
+                    </div>
+
+                    <div class="item">
+                        🕷️
+                        <span>Miranha</span>
+                    </div>
+
+                    <div class="item">
+                        📱
+                        <span>Stories</span>
+                    </div>
+
+                    <div class="item">
+                        ✨
+                        <span>Carisma</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="description">
+                Edição Especial • Colecionável • Extremamente Rara
+            </div>
+
+        </div>
+
+        <!-- ATRIBUTOS -->
+
+        <div class="section-card">
+
+            <h2>📊 Atributos</h2>
+
+            <div class="stat">
+                <span>Carisma</span>
+                <div class="bar">
+                    <div style="width:100%"></div>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span>Estilo</span>
+                <div class="bar">
+                    <div style="width:100%"></div>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span>Bom Gosto</span>
+                <div class="bar">
+                    <div style="width:100%"></div>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span>Energia Principal</span>
+                <div class="bar">
+                    <div style="width:95%"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CERTIFICADO -->
+
+        <div class="section-card">
+
+            <h2>📜 Certificado Oficial</h2>
+
+            <p><strong>Modelo:</strong> Sarah Barbie Girl</p>
+
+            <p><strong>Categoria:</strong> Collector Edition</p>
+
+            <p><strong>Raridade:</strong> ★★★★★</p>
+
+            <p><strong>Disponibilidade:</strong> Extremamente Limitada</p>
+
+        </div>
+
+        <!-- SCANNER -->
+
+        <div class="section-card">
+
+            <h2>🔍 Scanner Mattel</h2>
+
+            <button class="action-btn" onclick="escanear()">
+                Escanear Produto
+            </button>
+
+            <div id="scannerResultado"></div>
+
+        </div>
+
+        <!-- CURIOSIDADES -->
+
+        <div class="section-card">
+
+            <h2>✨ Curiosidade Aleatória</h2>
+
+            <button class="action-btn" onclick="mostrarCuriosidade()">
+                Mostrar Curiosidade
+            </button>
+
+            <p id="curiosidade"></p>
+
+        </div>
+
+        <!-- MANUAL -->
+
+        <div class="section-card">
+
+            <h2>📦 Instruções de Uso</h2>
+
+            <ul class="manual">
+
+                <li>Tratar com carinho.</li>
+
+                <li>Compatível com o universo do Miranha.</li>
+
+                <li>Não subestimar o nível de carisma.</li>
+
+                <li>Pode causar sorrisos inesperados.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- NOTA FISCAL -->
+
+        <div class="section-card">
+
+            <h2>🧾 Nota Fiscal</h2>
+
+            <p><strong>Produto:</strong> Sarah Barbie Girl</p>
+
+            <p><strong>Quantidade:</strong> 1</p>
+
+            <p><strong>Valor:</strong> Inestimável</p>
+
+            <p><strong>Status:</strong> Esgotado</p>
+
+        </div>
+
+        <!-- MENSAGEM -->
+
+        <div class="section-card">
+
+            <button
+                class="action-btn"
+                onclick="mostrarMensagem()"
+            >
+                💌 Mensagem da Desenvolvedora
+            </button>
+
+        </div>
+
+        <!-- CRÉDITOS -->
+
+        <div class="section-card credits">
+
+            <h2>🎬 Créditos</h2>
+
+            <p>Direção Criativa: Nat</p>
+
+            <p>Programação: Nat</p>
+
+            <p>Pesquisa de Mercado: Nat</p>
+
+            <p>Especialista em Miranha: Sarah</p>
+
+            <br>
+
+            <p>
+                Obrigada por visitar a coleção oficial
+                Sarah Barbie Girl™
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
