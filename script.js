@@ -48,7 +48,7 @@ function escanear(){
 
 const curiosidades = [
 
-    "Possui compatibilidade oficial com o universo do Miranha. 🕷️",
+    "Possui compatibilidade oficial com o universo do spiderman . 🕷️",
 
     "Nível de carisma acima da média. ✨",
 
