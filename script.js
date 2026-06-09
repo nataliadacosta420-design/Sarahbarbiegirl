@@ -31,7 +31,7 @@ function escanear(){
 
         ✓ Carisma detectado<br>
         ✓ Bom gosto detectado<br>
-        ✓ Compatibilidade com o Miranha detectada<br>
+        ✓ Compatibilidade com bonecas detectada<br>
         ✓ Edição rara confirmada<br><br>
 
         <strong>
